@@ -1,0 +1,31 @@
+URL for the 1. response: 
+http://api.apilayer.com/exchangerates_data/convert?from=USD&to=EUR&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+!!! while my apikey was still working !!!
+!!! I added later the datetime as "yyyy-MM-dd hh:mm:ss" as the first field
+!!! I made and use now another ExchangeRateResponseDTO.toString() variant for JSON format:
+public String toLogString() {
+		return "{date:" + "\"" + date + "\"" + ",from:" + from + ",to:" + to + ",fromAmount:" + fromAmount + ",toAmount:"
+				+ toAmount + ",exchangeRate:" + exchangeRate + "}";
+}
+> { date: "yyyy-MM-dd hh:mm:ss",from:USD,to:EUR,fromAmount:1,toAmount:1,exchangeRate=0.94182 }
+
+ExchangeRateResponseDTO [from=USD, to=EUR, fromAmount=1, toAmount=0.94182, exchangeRate=0.94182]
+ExchangeRateResponseDTO [from=USD, to=SEK, fromAmount=1, toAmount=9.917599, exchangeRate=9.917599]
+ExchangeRateResponseDTO [from=EUR, to=USD, fromAmount=1, toAmount=1.061774, exchangeRate=1.061774]
+ExchangeRateResponseDTO [from=EUR, to=SEK, fromAmount=1, toAmount=10.530246, exchangeRate=10.530246]
+ExchangeRateResponseDTO [from=SEK, to=USD, fromAmount=1, toAmount=0.100831, exchangeRate=0.100831]
+ExchangeRateResponseDTO [from=SEK, to=EUR, fromAmount=1, toAmount=0.094965, exchangeRate=0.094965]
+
+ExchangeRateResponseDTO [from=USD, to=EUR, fromAmount=1, toAmount=0.94182, exchangeRate=0.94182]
+ExchangeRateResponseDTO [from=USD, to=SEK, fromAmount=1, toAmount=9.917599, exchangeRate=9.917599]
+ExchangeRateResponseDTO [from=EUR, to=USD, fromAmount=1, toAmount=1.061774, exchangeRate=1.061774]
+ExchangeRateResponseDTO [from=EUR, to=SEK, fromAmount=1, toAmount=10.530246, exchangeRate=10.530246]
+ExchangeRateResponseDTO [from=SEK, to=USD, fromAmount=1, toAmount=0.100831, exchangeRate=0.100831]
+ExchangeRateResponseDTO [from=SEK, to=EUR, fromAmount=1, toAmount=0.094965, exchangeRate=0.094965]
+
+ExchangeRateResponseDTO [from=USD, to=EUR, fromAmount=1, toAmount=0.94182, exchangeRate=0.94182]
+ExchangeRateResponseDTO [from=USD, to=SEK, fromAmount=1, toAmount=9.917599, exchangeRate=9.917599]
+ExchangeRateResponseDTO [from=EUR, to=USD, fromAmount=1, toAmount=1.061774, exchangeRate=1.061774]
+ExchangeRateResponseDTO [from=EUR, to=SEK, fromAmount=1, toAmount=10.530246, exchangeRate=10.530246]
+ExchangeRateResponseDTO [from=SEK, to=USD, fromAmount=1, toAmount=0.100831, exchangeRate=0.100831]
+ExchangeRateResponseDTO [from=SEK, to=EUR, fromAmount=1, toAmount=0.094965, exchangeRate=0.094965]

@@ -1,0 +1,21 @@
+ANALYSIS OF THE LOG FILE:
+
+We can see that the Quartz Cron Job went through correctly the combinations:
+USD-EUR,USD-SEK,EUR-USD,EUR-SEK,SEK-USD,SEK-EUR:
+
+The apikey is not valid anymore due to the free account max request limits exceeded.
+The queries got rejected due to the number of requests exceeded both the daily and the monthly limit:
+
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=USD&to=EUR&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=USD&to=SEK&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=EUR&to=USD&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=EUR&to=SEK&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=SEK&to=USD&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+INFO: fetch url: http://api.apilayer.com/exchangerates_data/convert?from=SEK&to=EUR&amount=1&apikey=HZOwa1dYHjD4MEEA0KNPsOiOEwqhQcvt
+> 429 Too Many Requests: "{"message":"You have exceeded your daily\/monthly API rate limit. Please review and upgrade your subscription plan at https:\/\/promptapi.com\/subscriptions to continue."}"
+...
